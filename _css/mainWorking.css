@@ -301,6 +301,12 @@ a.shop {
 
 
 /*article styles*/
+article {
+	float: left;
+	padding-left: 50px;
+	width: 850px;
+}
+
 article section {
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 2em;
@@ -339,10 +345,17 @@ article ul {
 	background: rgb(237, 228, 214);
 	width: 360px;
 	padding: 20px;
+	margin-right: 50px;
 	border: none;
 	border-radius: 15px 0 15px 0;
 	font-size: 90%;
+	float: left;
 }
+
+.news + .news {
+	margin-right: 0;
+}
+
 .news h2 {
 	margin-top: 0;
 }
@@ -585,6 +598,12 @@ fieldset div {
 }
 
 /*aside styles*/
+aside {
+	float: right;
+	width: 280px;
+	padding-right: 50px;
+}
+
 aside h2 {
 	font-family: Cardo, Georgia, Times, serif;
 	font-size: 1.2em;
@@ -668,6 +687,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 #pageFooter {
 	background: rgb(173, 169, 130);
 	padding-top: 1.5em;
+	clear: both;
 }
 
 input[type="search"] {
